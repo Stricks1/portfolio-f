@@ -91,3 +91,38 @@ code {
 .grey-color:hover {
   color: #a7a4a4;
 }
+
+.list-header {
+  font-size: 2em;
+}
+
+.max-info-header {
+  min-width: 288px;
+  max-width: 380px;
+  margin-left: 100px;
+}
+
+.max-info-header h1 {
+  color: #F55800;
+  font-family: 'Crete Round';
+  font-weight: 400;
+}
+
+.max-info-header h4 {
+  font-family: 'Inter';
+}
+
+.bg-header-img {
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 50vw;
+  height: 100vh;
+}
+
+@media (max-width: 1050px) {
+  .bg-header-img {
+    background-position: left;
+    width: 30vw;
+    height: 70vh;
+  }
+}
