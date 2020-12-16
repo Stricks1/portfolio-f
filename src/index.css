@@ -11,3 +11,64 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#nav-links {
+  position: fixed;
+  background-color: #3e3c3c;
+  font-weight: bold;
+  font-size: 1.25em;
+  height: 50px;
+}
+
+#Portfolio,
+#About,
+#contact {
+  padding-top: 50px;
+}
+
+.nav-clicked {
+  color: #6F6C6B;
+}
+
+.list-nav {
+  list-style-type: none;
+  margin: 0;
+  padding-right: 5%;
+}
+
+.nav-expanded {
+  position: fixed;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #3e3c3c
+}
+
+.item-drop {
+  font-weight: bold;
+  font-size: 1.5em;
+  width: 75%;
+  text-align: center;
+  padding: 1em 0;
+  border-bottom: 1px solid #6F6C6B;
+}
+
+.item-drop a {
+  text-decoration: none;
+}
+
+.item-drop a:hover {
+  text-decoration: none;
+}
+
+.width-big {
+  height: 900px;
+}
+
+.nav-name {
+  font-size: 1.25em;
+}
+
+.list-fullscreen {
+  width: 400px;
+}
