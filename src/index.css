@@ -81,7 +81,7 @@ code {
 }
 
 .header-container-height {
-  min-height: 870px;
+  min-height: 760px;
 }
 
 .grey-color {
@@ -96,10 +96,13 @@ code {
   font-size: 2em;
 }
 
+.header-left-desktop {
+  margin-left: 100px;
+}
+
 .max-info-header {
   min-width: 288px;
   max-width: 380px;
-  margin-left: 100px;
 }
 
 .max-info-header h1 {
@@ -119,9 +122,19 @@ code {
   height: 100vh;
 }
 
+.h-600 {
+  height: 600px;
+}
+
+.bg-header-img-mobile {
+  background-repeat: no-repeat;
+  background-position: right -180px bottom -80px;
+  background-size: 400px 375px;
+}
+
 @media (max-width: 1050px) {
   .bg-header-img {
-    background-position: left;
+    background-position: left -100px bottom -50px;
     width: 30vw;
     height: 70vh;
   }
