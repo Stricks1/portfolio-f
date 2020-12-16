@@ -57,17 +57,17 @@ const Nav = () => {
       </div>
       <ul className="d-flex list-nav justify-content-between list-fullscreen">
         <li className="pl-2">
-          <a href="#Portfolio" className="text-white">
+          <a href="#Portfolio" className="text-white text-decoration-none">
             Portfolio
           </a>
         </li>
         <li className="pl-2">
-          <a href="#About" className="text-white">
+          <a href="#About" className="text-white text-decoration-none">
             About
           </a>
         </li>
         <li className="pl-2">
-          <a href="#Contact" className="text-white">
+          <a href="#Contact" className="text-white text-decoration-none">
             Contact
           </a>
         </li>
