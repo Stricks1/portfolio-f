@@ -111,7 +111,8 @@ code {
   font-weight: 400;
 }
 
-.max-info-header h4 {
+.max-info-header h4,
+.max-info-header p {
   font-family: 'Inter';
 }
 
