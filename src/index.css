@@ -340,7 +340,7 @@ code {
 }
 
 .img-desktop-phone {
-  max-width: 100%;
+  height: 100%;
 }
 
 .modal-tech {
