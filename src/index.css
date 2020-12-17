@@ -40,6 +40,10 @@ code {
   height: 50px;
 }
 
+.fas {
+  cursor: pointer;
+}
+
 .padding-top-base {
   padding-top: 50px;
 }
@@ -224,6 +228,10 @@ code {
   cursor: pointer; 
 }
 
+.button-square svg:hover {
+  fill: #F55800;
+}
+
 .button-square:active {
   color: white;
   background-color: #E05304;
@@ -272,11 +280,32 @@ code {
 .modal-main {
   position:fixed;
   background: white;
-  width: 80%;
+  width: 85%;
   height: auto;
+  max-width: 1000px;
+  max-height: 90vh;
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
+}
+
+.modal-main-phone {
+  position:fixed;
+  background: white;
+  width: 95%;
+  height: auto;
+  max-height: 95vh;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.max-img-height {
+  max-height: 70vh;
+}
+
+.max-img-height-small {
+  height: 100%;
 }
 
 .display-block {
@@ -285,4 +314,24 @@ code {
 
 .display-none {
   display: none;
+}
+
+.modal-title {
+  color: #172B4D;
+}
+
+.modal-info {
+  color: #344563;
+}
+
+.max-h-modal-small {
+  height: 25vh;
+}
+
+.info-modal-small {
+  height: 40vh;
+}
+
+.font-size-small {
+  font-size: 0.9em;
 }
