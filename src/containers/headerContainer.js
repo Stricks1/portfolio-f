@@ -9,7 +9,7 @@ const Header = () => {
 
   if (width < breakpoint) {
     return (
-      <div className="padding-top-base h-600 header-container d-flex justify-content-center bg-header-img-mobile" style={{ backgroundImage: `url(${HeaderImage})` }}>
+      <div className="padding-top-base h-600 header-container d-flex justify-content-center bg-header-img-mobile blurrable" style={{ backgroundImage: `url(${HeaderImage})` }}>
         <div className="d-flex flex-column mx-4 align-self-center">
           <div className="align-self-center justify-self-end max-info-header">
             <h1>Hey There. <br /> I'm Gabriel</h1>
@@ -46,7 +46,7 @@ const Header = () => {
   }
 
   return (
-    <div className="padding-top-base header-container-height header-container">
+    <div className="padding-top-base header-container-height header-container blurrable">
       <div className="d-flex justify-content-between">
         <div className="align-self-center">
           <ul className="list-unstyled list-group list-header ml-4">

@@ -17,7 +17,7 @@ const Nav = () => {
 
   if (width < breakpoint) {
     return (
-      <div id="nav-links" className="px-3 py-2 w-100 d-flex justify-content-between text-white">
+      <div id="nav-links" className="px-3 py-2 w-100 d-flex justify-content-between text-white blurrable">
         <div className="mr-4 align-self-center nav-name">
           Gabriel
         </div>
@@ -51,7 +51,7 @@ const Nav = () => {
   }
 
   return (
-    <nav id="nav-links" className="py-2 w-100 d-flex justify-content-between text-white">
+    <nav id="nav-links" className="py-2 w-100 d-flex justify-content-between text-white blurrable">
       <div className="ml-3 align-self-center nav-name">
         Gabriel
       </div>
