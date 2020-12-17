@@ -8,7 +8,7 @@ export const Modal = ({ handleClose, show, project }) => {
   if (width < breakpoint) {
     return (
       <div className={showHideClassName}>
-        <section className="modal-main-phone pt-4 font-size-small">
+        <section className="modal-main-phone pt-1 font-size-small">
         <div className="d-flex flex-column">
           <div className="d-flex justify-content-between mx-4">
             <h2 className="modal-title">{project.name}</h2>
