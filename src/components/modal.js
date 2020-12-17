@@ -29,12 +29,12 @@ export const Modal = ({ handleClose, show, project }) => {
             <div className="max-h-modal-small">
               { project.images.length === 1 && (
                 <div className='d-flex justify-content-center max-img-height-small'>
-                  <img className='h-100 my-4' src={project.images[0]} alt='test' />
+                  <img className='h-100 my-2' src={project.images[0]} alt='test' />
                 </div>
               )}
               { project.images.length === 2 && (
                 <div className='d-flex justify-content-center max-img-height-small'>
-                  <img className='img-desktop my-4' src={project.images[0]} alt='test' />
+                  <img className='img-desktop my-2' src={project.images[0]} alt='test' />
                   <img className='img-phone-small align-self-end' src={project.images[1]} alt='test' />
                 </div>
               )}
@@ -82,13 +82,13 @@ export const Modal = ({ handleClose, show, project }) => {
             <div className="w-55 max-h-modal">
               { project.images.length === 1 && (
                 <div className='d-flex justify-content-center max-img-height'>
-                  <img className='w-100 my-4' src={project.images[0]} alt='test' />
+                  <img className='w-100 my-2' src={project.images[0]} alt='test' />
                 </div>
               )}
               { project.images.length === 2 && (
                 <div className='d-flex justify-content-center max-img-height'>
-                  <img className='img-desktop my-4' src={project.images[0]} alt='test' />
-                  <img className='img-phone my-4 align-self-end' src={project.images[1]} alt='test' />
+                  <img className='img-desktop my-2' src={project.images[0]} alt='test' />
+                  <img className='img-phone my-2 align-self-end' src={project.images[1]} alt='test' />
                 </div>
               )}
             </div>
