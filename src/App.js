@@ -2,6 +2,7 @@ import React from "react";
 import { ViewportProvider } from "./hooks/viewPort";
 import Nav from "./components/topNav";
 import Header from "./containers/headerContainer";
+import Projects from "./containers/projectsContainer";
 import "./index.css";
 
 export default function App() {
@@ -9,11 +10,7 @@ export default function App() {
     <ViewportProvider>
       <Nav />
       <Header />
-      <div className="width-big"></div>
-      <div id="Portfolio">
-      TEST
-      </div>
-      <div className="width-big"></div>
+      <Projects />
     </ViewportProvider>
   );
 }

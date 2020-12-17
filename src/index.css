@@ -15,6 +15,7 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #E5E5E5;
 }
 
 code {
@@ -154,5 +155,99 @@ code {
     background-position: left -100px bottom -50px;
     width: 20vw;
     height: 70vh;
+  }
+}
+
+/* Project Elements */
+
+.h3-project {
+  color: #091E42;
+}
+
+.text-highlight {
+  color: #091E42;
+  font-size: 1.5em;
+}
+
+.vw-90 {
+  width: 90vw;
+}
+
+.line-separator {
+  width: 100%;
+  height: 1px;
+  position: relative;
+  bottom: -17px;
+  border-bottom: 1px solid #212121;
+}
+
+.w-55 {
+  width: 55%;
+}
+
+.w-45 {
+  width: 45%;
+}
+
+.img-desktop {
+  max-width: 80%;
+  min-height: 170px;
+}
+
+.img-phone {
+  max-width: 20%;
+  margin-left: -8%;
+  min-height: 100px;
+}
+
+.tech-square {
+  border: solid 1px #8993A4;
+}
+
+.button-square {
+  font-size: 1.15em;
+  color: white;
+  background-color: #F55800;
+  border: solid 1px #F55800;        
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+.button-square:hover {
+  color: #F55800;
+  background-color: #FFF5E1;
+  border: solid 1px #F55800;
+  cursor: pointer; 
+}
+
+.button-square:active {
+  color: white;
+  background-color: #E05304;
+}
+
+@media (max-width: 1550px) {
+  .text-highlight {
+    font-size: 1.25em;
+  }
+}
+
+@media (max-width: 1250px) {
+  .text-highlight {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 950px) {
+  .text-highlight {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 750px) {
+  .text-highlight {
+    font-size: 0.65em;
   }
 }

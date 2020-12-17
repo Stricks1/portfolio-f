@@ -20,22 +20,22 @@ const Header = () => {
             <ul className="list-unstyled list-group list-header d-flex flex-row justify-content-between w-100">
               <li>
                 <a href="https://github.com/Stricks1/" target="_blank" title="GitHub" className="grey-color">
-                  <i class="fa fa-github" />
+                  <i className="fa fa-github" />
                 </a>
               </li>
               <li>
                 <a href="https://www.linkedin.com/in/gabriel-malheiros-silveira/" target="_blank" title="linkedin" className="grey-color">
-                  <i class="fa fa-linkedin" />
+                  <i className="fa fa-linkedin" />
                 </a>
               </li>
               <li>
                 <a href="https://twitter.com/gabriel_stricks" target="_blank" title="twitter" className="grey-color">
-                  <i class="fa fa-twitter" />
+                  <i className="fa fa-twitter" />
                 </a>
               </li>
               <li>
                 <a href="https://angel.co/u/gabriel-malheiros-silveira" target="_blank" title="angellist" className="grey-color">
-                  <i class="fa fa-angellist" />
+                  <i className="fa fa-angellist" />
                 </a>
               </li>
             </ul>
@@ -52,22 +52,22 @@ const Header = () => {
           <ul className="list-unstyled list-group list-header ml-4">
             <li>
               <a href="https://github.com/Stricks1/" target="_blank" title="GitHub" className="grey-color">
-                <i class="fa fa-github" />
+                <i className="fa fa-github" />
               </a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/gabriel-malheiros-silveira/" target="_blank" title="linkedin" className="grey-color">
-                <i class="fa fa-linkedin" />
+                <i className="fa fa-linkedin" />
               </a>
             </li>
             <li>
               <a href="https://twitter.com/gabriel_stricks" target="_blank" title="twitter" className="grey-color">
-                <i class="fa fa-twitter" />
+                <i className="fa fa-twitter" />
               </a>
             </li>
             <li>
               <a href="https://angel.co/u/gabriel-malheiros-silveira" target="_blank" title="angellist" className="grey-color">
-                <i class="fa fa-angellist" />
+                <i className="fa fa-angellist" />
               </a>
             </li>
           </ul>
