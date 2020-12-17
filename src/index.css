@@ -283,10 +283,10 @@ code {
   width: 85%;
   height: auto;
   max-width: 1000px;
-  max-height: 90vh;
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
+  overflow-y: auto;
 }
 
 .modal-main-phone {
@@ -294,10 +294,10 @@ code {
   background: white;
   width: 95%;
   height: auto;
-  max-height: 95vh;
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
+  overflow-y: auto;
 }
 
 .max-img-height {
@@ -325,7 +325,7 @@ code {
 }
 
 .max-h-modal-small {
-  height: 25vh;
+  height: 22vh;
 }
 
 .info-modal-small {
