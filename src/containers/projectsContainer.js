@@ -1,8 +1,8 @@
 import React from 'react';
 import { useViewport } from "../hooks/viewPort";
 import frontHouses from "../assets/frontendhouses.png";
-import phoneMusic from "../assets/onlineShopCel.png";
-import desktopMusic from "../assets/onlineShop.png";
+/* import phoneMusic from "../assets/onlineShopCel.png";
+import desktopMusic from "../assets/onlineShop.png"; */
 import HighlightProject from "../components/mainProject";
 
 const Projects = () => {
