@@ -46,7 +46,7 @@ const Header = () => {
   }
 
   return (
-    <div className="padding-top-base header-container-height header-container blurrable">
+    <div className="padding-top-base header-container blurrable">
       <div className="d-flex justify-content-between">
         <div className="align-self-center">
           <ul className="list-unstyled list-group list-header ml-4">

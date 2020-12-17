@@ -102,10 +102,6 @@ code {
   color: white;
 }
 
-.header-container-height {
-  min-height: 760px;
-}
-
 .grey-color {
   color: #CFCFCF;
 }
@@ -341,4 +337,10 @@ code {
   margin-left: -5%;
   max-height: 70%;
   margin-bottom: -1%;
+}
+
+@media (max-width: 600px) {
+  .modal-title {
+    font-size: 1.75em;
+  }
 }
