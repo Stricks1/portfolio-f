@@ -18,7 +18,7 @@ export const Modal = ({ handleClose, show, project }) => {
           </div>
           <div className="d-flex flex-wrap pt-2 mx-4">
             { project.techs.map(tech => (
-                  <div className="tech-square py-1 px-3 mr-2 mb-2" key={tech}>
+                  <div className="tech-square modal-tech py-1 px-3 mr-2 mb-2" key={tech}>
                     {tech}
                   </div>
                 )

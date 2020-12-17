@@ -339,6 +339,10 @@ code {
   margin-bottom: -1%;
 }
 
+.modal-tech {
+  font-size: 0.8em;
+}
+
 @media (max-width: 600px) {
   .modal-title {
     font-size: 1.75em;
