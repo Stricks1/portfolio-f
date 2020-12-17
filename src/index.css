@@ -334,9 +334,13 @@ code {
 
 .img-phone-small {
   max-width: 20%;
-  margin-left: -5%;
+  margin-left: -4%;
   max-height: 70%;
   margin-bottom: -1%;
+}
+
+.img-desktop-phone {
+  max-width: 100%;
 }
 
 .modal-tech {

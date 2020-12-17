@@ -34,7 +34,7 @@ export const Modal = ({ handleClose, show, project }) => {
               )}
               { project.images.length === 2 && (
                 <div className='d-flex justify-content-center max-img-height-small'>
-                  <img className='img-desktop my-2' src={project.images[0]} alt='test' />
+                  <img className='img-desktop-phone mt-2' src={project.images[0]} alt='test' />
                   <img className='img-phone-small align-self-end' src={project.images[1]} alt='test' />
                 </div>
               )}
