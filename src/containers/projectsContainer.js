@@ -100,7 +100,7 @@ const Projects = () => {
       background: musicBg,
       github: "https://github.com/Stricks1/onlineShop",
       live: "https://rawcdn.githack.com/Stricks1/onlineShop/b1a7186910215306c6bcf25926abcad22bb4154a/index.html",
-      horizontal: false,
+      horizontal: true,
     }
   ]
 
