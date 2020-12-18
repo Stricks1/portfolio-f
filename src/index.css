@@ -233,6 +233,54 @@ code {
   background-color: #E05304;
 }
 
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 15px;
+}
+
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  min-height: 300px;
+  width: 18vw;
+  height: calc(18vw*1.2);
+  min-width: 250px;
+  color: black;
+  text-decoration: none;
+  padding-bottom: 15px;
+  background-size: cover;
+}
+
+.project-card:hover {
+  cursor: pointer;
+  border: 1px solid black;
+  opacity: 1;
+}
+
+.project-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-wrapper .project-card {
+  position: relative;
+  z-index: 2;
+}
+
+.project-wrapper img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: auto;
+  opacity: 0.4;
+}
+
 @media (max-width: 1550px) {
   .text-highlight {
     font-size: 1.25em;
