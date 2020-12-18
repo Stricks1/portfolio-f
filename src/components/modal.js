@@ -61,7 +61,7 @@ export const Modal = ({ handleClose, show, project }) => {
 
   return (
     <div className={showHideClassName}>
-      <section className="modal-main pt-4">
+      <section className="modal-main py-4">
         <div className="d-flex flex-column">
           <div className="d-flex justify-content-between mx-4">
             <h2 className="modal-title">{project.name}</h2>
@@ -82,7 +82,7 @@ export const Modal = ({ handleClose, show, project }) => {
             <div className="w-55 max-h-modal">
               { project.images.length === 1 && (
                 <div className='d-flex justify-content-center max-img-height'>
-                  <img className='w-100 my-2' src={project.images[0]} alt='test' />
+                  <img className='w-100 my-2 px-4' src={project.images[0]} alt='test' />
                 </div>
               )}
               { project.images.length === 2 && (

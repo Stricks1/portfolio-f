@@ -15,6 +15,7 @@ const Projects = () => {
   const highlightProject = {
     name: "Rent Houses",
     info: "On this project I created a Front End that uses my API to manage renting places. The idea is to create a simplified version of AirBnb, where every user can register their own places for rent. It handle the user signing (utilizing tokens for validating the sessions), each user can create edit and delete their own places adding photos. And manage their favorites places.",
+    short: "A Front End that uses an API to manage renting places.",
     techs: ["React", "Redux", "Ruby on Rails", "API"],
     images: [frontHouses], 
     background: "",
@@ -26,6 +27,7 @@ const Projects = () => {
     {
       name: "Sea Treasures",
       info: "On this game, you are Bob the octopus, and you are in a quest to find a treasure in the 16-bit layout deep sea. You need to face some sea creatures in order to achieve your goal, and you can kill the creatures by shooting ink from our hero and interact with levers on the scenario to open paths. You have a limited time to complete the quest.",
+      short: "A platform-shooter game build in Phaser3.",
       techs: ["JS", "Phaser3", "Game"],
       images: [seaSs],
       background: seaBg,
@@ -58,7 +60,7 @@ const Projects = () => {
         <span className="line-separator ml-3"></span>
       </div>
       <HighlightProject project={highlightProject}/>
-      <div className="cards-container blurrable">
+      <div className="cards-container">
         {
           listProjects.map(project => (<Project key={project.name} project={project} />))
         }

@@ -6,6 +6,15 @@ const Project = ({ project }) => {
   const { width } = useViewport();
   const breakpoint = 560;
   const [show, setShow] = useState(false);
+  const [hover, setHover] = useState(false);
+
+  const onHoverIn = () => {
+    setHover(true);
+  };
+
+  const onHoverOut = () => {
+    setHover(false);
+  };
 
   const showModal = () => {
     const blur = document.getElementsByClassName("blurrable");
@@ -40,12 +49,37 @@ const Project = ({ project }) => {
   }
 
   return (
-    <div className="project-wrapper">
-      <div className="project-card justify-content-end">
-        <h3>{project.name}</h3>
+    <>
+      <Modal show={show} handleClose={hideModal} project={project}>
+      </Modal>
+      <div className="project-wrapper blurrable">
+        <div className="project-card justify-content-end" onMouseEnter={onHoverIn} onMouseLeave={onHoverOut}>
+          { !hover &&
+            <>
+              <h3 className="ml-2">{project.name}</h3>
+              <p className="ml-2">{project.short}</p>
+              <div className="d-flex flex-wrap pt-2 ml-2">
+                { project.techs.map(tech => (
+                      <div className="tech-square-2 py-1 px-3 mr-2 mb-2" key={tech}>
+                        {tech}
+                      </div>
+                    )
+                  ) 
+                }
+              </div>
+            </>
+          }
+          { hover &&
+            <>
+              <div className="button-square text-center py-1 px-3 font-weight-bold" onClick={showModal}>
+                See Project
+              </div> 
+            </>
+          }
+        </div>
+        <img src={project.background} alt="imageProject" />
       </div>
-      <img src={project.background} alt="imageProject" />
-    </div>
+    </>
   );
 };
 
