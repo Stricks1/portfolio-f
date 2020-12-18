@@ -42,9 +42,29 @@ const Project = ({ project }) => {
 
   if (width < breakpoint) {
     return (
-      <div className="project-card" style={{ backgroundImage: `url(${project.background})` }}>
-        {project.name}
-      </div>
+      <>
+        <Modal show={show} handleClose={hideModal} project={project}>
+        </Modal>
+        <div className="project-wrapper blurrable">
+          <div className="project-card-phone justify-content-end" onMouseEnter={onHoverIn} onMouseLeave={onHoverOut}>
+            <h3 className="ml-2">{project.name}</h3>
+            <p className="ml-2">{project.short}</p>
+            <div className="d-flex flex-wrap pt-2 ml-2">
+              { project.techs.map(tech => (
+                    <div className="tech-square-2 py-1 px-3 mr-2 mb-2" key={tech}>
+                      {tech}
+                    </div>
+                  )
+                ) 
+              }
+            </div>
+            <div className="button-square text-center py-1 px-3 font-weight-bold" onClick={showModal}>
+              See Project
+            </div> 
+          </div>
+          <img className="img-phone-pj" src={project.background} alt="imageProject" />
+        </div>
+      </>
     );
   }
 
@@ -77,7 +97,7 @@ const Project = ({ project }) => {
             </>
           }
         </div>
-        <img src={project.background} alt="imageProject" />
+        <img className="img-dsk" src={project.background} alt="imageProject" />
       </div>
     </>
   );

@@ -263,17 +263,31 @@ code {
   background: none;
 }
 
+
+.project-card-phone {
+  display: flex;
+  flex-direction: column;
+  width: 18vw;
+  height: calc(18vw*1.2);
+  min-width: 90vw;
+  min-height: 300px;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%);
+}
+
 .project-wrapper {
   position: relative;
   overflow: hidden;
 }
 
-.project-wrapper .project-card {
+.project-wrapper .project-card,
+.project-wrapper .project-card-phone {
   position: relative;
   z-index: 2;
 }
 
-.project-wrapper img {
+.project-wrapper .img-dsk {
   position: absolute;
   left: 0;
   top: 0;
@@ -283,7 +297,16 @@ code {
   object-position: -75px 0;
 }
 
-.project-wrapper:hover img {
+.project-wrapper .img-phone-pj {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: auto;
+  width: 100%;
+  opacity: 0.6;
+}
+
+.project-wrapper:hover .img-dsk {
   opacity: 1;
 }
 
@@ -308,6 +331,12 @@ code {
 @media (max-width: 750px) {
   .text-highlight {
     font-size: 0.65em;
+  }
+}
+
+@media (max-width: 560px) {
+  .cards-container {
+    margin: 0;
   }
 }
 
