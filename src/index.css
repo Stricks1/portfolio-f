@@ -277,7 +277,7 @@ code {
   position:fixed;
   background: white;
   width: 85%;
-  height: auto;
+  height: 90vh;
   max-width: 1000px;
   top:50%;
   left:50%;
