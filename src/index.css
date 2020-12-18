@@ -32,7 +32,7 @@ code {
 /* Navbar elements */
 
 #nav-links {
-  z-index: 1;
+  z-index: 5;
   position: fixed;
   background-color: #3e3c3c;
   font-weight: bold;
@@ -243,26 +243,29 @@ code {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 15px;
 }
 
 .project-card {
   display: flex;
   flex-direction: column;
   min-height: 300px;
-  width: 18vw;
-  height: calc(18vw*1.2);
+  width: 100%;
+  height: auto;
   min-width: 250px;
   color: white;
+  padding-top: 50%;
   text-decoration: none;
   background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%);
 }
 
-.project-card:hover {
+.project-wrapper:hover {
   border: 1px solid black;
   background: none;
 }
 
+.project-wrapper:hover .project-card {
+  background: none;
+}
 
 .project-card-phone {
   display: flex;
@@ -279,6 +282,10 @@ code {
 .project-wrapper {
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  width: 30%;
 }
 
 .project-wrapper .project-card,
@@ -291,10 +298,9 @@ code {
   position: absolute;
   left: 0;
   top: 0;
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 100%;
   opacity: 0.6;
-  object-position: -75px 0;
 }
 
 .project-wrapper .img-phone-pj {
@@ -320,6 +326,12 @@ code {
   .text-highlight {
     font-size: 1em;
   }
+  .project-wrapper {
+    width: fit-content;
+  }
+  .project-card {
+    padding-top: 0;
+  }
 }
 
 @media (max-width: 950px) {
@@ -331,12 +343,6 @@ code {
 @media (max-width: 750px) {
   .text-highlight {
     font-size: 0.65em;
-  }
-}
-
-@media (max-width: 560px) {
-  .cards-container {
-    margin: 0;
   }
 }
 

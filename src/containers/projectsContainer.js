@@ -1,8 +1,10 @@
 import React from 'react';
 import { useViewport } from "../hooks/viewPort";
+import housesBg from "../assets/housesBg.png";
 import frontHouses from "../assets/frontendhouses.png";
-/*import phoneMusic from "../assets/onlineShopCel.png";
-import desktopMusic from "../assets/onlineShop.png";*/
+import phoneMusic from "../assets/onlineShopCel.png";
+import desktopMusic from "../assets/onlineShop.png";
+import musicBg from "../assets/musicBg.png";
 import seaSs from "../assets/seaSS.png";
 import seaBg from "../assets/seaBg.png";
 import HighlightProject from "../components/mainProject";
@@ -15,10 +17,10 @@ const Projects = () => {
   const highlightProject = {
     name: "Rent Houses",
     info: "On this project I created a Front End that uses my API to manage renting places. The idea is to create a simplified version of AirBnb, where every user can register their own places for rent. It handle the user signing (utilizing tokens for validating the sessions), each user can create edit and delete their own places adding photos. And manage their favorites places.",
-    short: "A Front End that uses an API to manage renting places.",
-    techs: ["React", "Redux", "Ruby on Rails", "API"],
+    short: "A Front End using my API to manage renting.",
+    techs: ["React", "Redux", "RoR", "API"],
     images: [frontHouses], 
-    background: "",
+    background: housesBg,
     github: "https://github.com/Stricks1/houses-front-end",
     live: "https://gallant-ptolemy-3e1fa6.netlify.app/",
   }
@@ -33,6 +35,26 @@ const Projects = () => {
       background: seaBg,
       github: "https://github.com/Stricks1/shooterGame",
       live: "https://phaserseagame.herokuapp.com/",
+    },
+    {
+      name: "Chord Flow",
+      info: "In this project, I create a music online shop with a 'main page with search option' and 'results' page. I used HTML & CSS techniques, such as semantic HTML, positioning of content with bootstrap, and flexbox among others. Also for learning purposes I used a framework - 'Flickity' to build a carousel.",
+      short: "A Layout for a Music Shop using Bootstrap.",
+      techs: ["HTML", "CSS", "Bootstrap"],
+      images: [desktopMusic, phoneMusic],
+      background: musicBg,
+      github: "https://github.com/Stricks1/onlineShop",
+      live: "https://rawcdn.githack.com/Stricks1/onlineShop/b1a7186910215306c6bcf25926abcad22bb4154a/index.html",
+    },
+    {
+      name: "Rent Houses",
+      info: "On this project I created a Front End that uses my API to manage renting places. The idea is to create a simplified version of AirBnb, where every user can register their own places for rent. It handle the user signing (utilizing tokens for validating the sessions), each user can create edit and delete their own places adding photos. And manage their favorites places.",
+      short: "A Front End using my API to manage renting.",
+      techs: ["React", "Redux", "RoR", "API"],
+      images: [frontHouses], 
+      background: housesBg,
+      github: "https://github.com/Stricks1/houses-front-end",
+      live: "https://gallant-ptolemy-3e1fa6.netlify.app/",
     }
   ]
 
@@ -44,7 +66,7 @@ const Projects = () => {
           <span className="line-separator mb-4"></span>
         </div>
         <HighlightProject project={highlightProject}/>
-        <div className="cards-container">
+        <div className="cards-container mt-4 pt-4">
           {
             listProjects.map(project => (<Project key={project.name} project={project}  />))
           }
@@ -60,7 +82,7 @@ const Projects = () => {
         <span className="line-separator ml-3"></span>
       </div>
       <HighlightProject project={highlightProject}/>
-      <div className="cards-container">
+      <div className="cards-container mt-4 pt-4">
         {
           listProjects.map(project => (<Project key={project.name} project={project} />))
         }

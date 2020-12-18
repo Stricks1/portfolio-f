@@ -45,7 +45,7 @@ const Project = ({ project }) => {
       <>
         <Modal show={show} handleClose={hideModal} project={project}>
         </Modal>
-        <div className="project-wrapper blurrable">
+        <div className="project-wrapper mb-4 blurrable">
           <div className="project-card-phone justify-content-end" onMouseEnter={onHoverIn} onMouseLeave={onHoverOut}>
             <h3 className="ml-2">{project.name}</h3>
             <p className="ml-2">{project.short}</p>
@@ -72,12 +72,12 @@ const Project = ({ project }) => {
     <>
       <Modal show={show} handleClose={hideModal} project={project}>
       </Modal>
-      <div className="project-wrapper blurrable">
+      <div className="project-wrapper mr-4 mb-4 blurrable">
         <div className="project-card justify-content-end" onMouseEnter={onHoverIn} onMouseLeave={onHoverOut}>
           { !hover &&
             <>
               <h3 className="ml-2">{project.name}</h3>
-              <p className="ml-2">{project.short}</p>
+              <p className="ml-2 project-p">{project.short}</p>
               <div className="d-flex flex-wrap pt-2 ml-2">
                 { project.techs.map(tech => (
                       <div className="tech-square-2 py-1 px-3 mr-2 mb-2" key={tech}>
@@ -90,8 +90,18 @@ const Project = ({ project }) => {
             </>
           }
           { hover &&
-            <>
-              <div className="button-square text-center py-1 px-3 font-weight-bold" onClick={showModal}>
+            <>              
+              <p className="ml-2 invisible project-p">{project.short}</p>
+              <div className="d-flex flex-wrap pt-2 ml-2 invisible">
+                { project.techs.map(tech => (
+                      <div className="tech-square-2 py-1 px-3 mr-2 mb-2" key={tech}>
+                        {tech}
+                      </div>
+                    )
+                  ) 
+                }
+              </div>
+              <div className="button-square text-center pt-1 pb-2 px-3 font-weight-bold" onClick={showModal}>
                 See Project
               </div> 
             </>
