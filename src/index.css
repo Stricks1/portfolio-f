@@ -299,6 +299,7 @@ code {
   left: 0;
   top: 0;
   height: auto;
+  vertical-align: middle;
   width: 100%;
   opacity: 0.6;
 }
@@ -326,11 +327,16 @@ code {
   .text-highlight {
     font-size: 1em;
   }
-  .project-wrapper {
-    width: fit-content;
-  }
   .project-card {
     padding-top: 0;
+  }
+  .project-card {
+    width: 100%;
+    height: auto;
+  }
+  .project-wrapper .img-dsk {
+    width: auto;
+    height: 100%;
   }
 }
 
@@ -338,11 +344,22 @@ code {
   .text-highlight {
     font-size: 0.8em;
   }
+  .project-wrapper {
+    width: 35%;
+  }
 }
 
 @media (max-width: 750px) {
   .text-highlight {
     font-size: 0.65em;
+  }
+  .project-wrapper {
+    width: fit-content;
+  }
+  .project-card,
+  .project-wrapper .img-dsk {
+    width: 100%;
+    height: auto;
   }
 }
 
