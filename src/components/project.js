@@ -41,8 +41,8 @@ const Project = ({ project }) => {
 
   return (
     <div className="project-wrapper">
-      <div className="project-card">
-        {project.name}
+      <div className="project-card justify-content-end">
+        <h3>{project.name}</h3>
       </div>
       <img src={project.background} alt="imageProject" />
     </div>

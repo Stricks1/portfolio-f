@@ -241,7 +241,6 @@ code {
 }
 
 .project-card {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -250,16 +249,16 @@ code {
   width: 18vw;
   height: calc(18vw*1.2);
   min-width: 250px;
-  color: black;
+  color: white;
   text-decoration: none;
   padding-bottom: 15px;
-  background-size: cover;
+  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%);
 }
 
 .project-card:hover {
   cursor: pointer;
   border: 1px solid black;
-  opacity: 1;
+  background: none;
 }
 
 .project-wrapper {
@@ -278,7 +277,11 @@ code {
   top: 0;
   height: 100%;
   width: auto;
-  opacity: 0.4;
+  opacity: 0.6;
+}
+
+.project-wrapper:hover img {
+  opacity: 1;
 }
 
 @media (max-width: 1550px) {
