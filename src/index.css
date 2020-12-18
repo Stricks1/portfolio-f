@@ -298,6 +298,16 @@ code {
   position: absolute;
   left: 0;
   top: 0;
+  height: 100%;
+  vertical-align: middle;
+  width: auto;
+  opacity: 0.6;
+}
+
+.project-wrapper .img-dsk-hor {
+  position: absolute;
+  left: 0;
+  top: 0;
   height: auto;
   vertical-align: middle;
   width: 100%;
@@ -313,7 +323,8 @@ code {
   opacity: 0.6;
 }
 
-.project-wrapper:hover .img-dsk {
+.project-wrapper:hover .img-dsk,
+.project-wrapper:hover .img-dsk-hor {
   opacity: 1;
 }
 
@@ -334,7 +345,8 @@ code {
     width: 100%;
     height: auto;
   }
-  .project-wrapper .img-dsk {
+  .project-wrapper .img-dsk,
+  .project-wrapper:hover .img-dsk-hor {
     width: auto;
     height: 100%;
   }
@@ -357,7 +369,8 @@ code {
     width: fit-content;
   }
   .project-card,
-  .project-wrapper .img-dsk {
+  .project-wrapper .img-dsk,
+  .project-wrapper:hover .img-dsk-hor {
     width: 100%;
     height: auto;
   }

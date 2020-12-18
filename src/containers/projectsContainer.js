@@ -32,6 +32,7 @@ const Projects = () => {
     background: housesBg,
     github: "https://github.com/Stricks1/houses-front-end",
     live: "https://gallant-ptolemy-3e1fa6.netlify.app/",
+    horizontal: false,
   }
 
   const listProjects = [
@@ -44,6 +45,7 @@ const Projects = () => {
       background: seaBg,
       github: "https://github.com/Stricks1/shooterGame",
       live: "https://phaserseagame.herokuapp.com/",
+      horizontal: true,
     },
     {
       name: "Pokemon Catalog",
@@ -54,6 +56,7 @@ const Projects = () => {
       background: reactBg,
       github: "https://github.com/Stricks1/reactReduxCapstone",
       live: "https://reactpokecapstone.herokuapp.com/",
+      horizontal: false,
     },
     {
       name: "Twitter Redesign",
@@ -64,6 +67,7 @@ const Projects = () => {
       background: twitterBg,
       github: "https://github.com/Stricks1/cap-twitter",
       live: "https://bearded-toonie-16990.herokuapp.com/",
+      horizontal: false,
     },
     {
       name: "Tic-Tac-Toe",
@@ -74,6 +78,7 @@ const Projects = () => {
       background: ticTacToeBg,
       github: "https://github.com/Stricks1/JsTicTacToe/",
       live: "https://raw.githack.com/Stricks1/JsTicTacToe/feature-ai/index.html",
+      horizontal: false,
     },
     {
       name: "XML Linter",
@@ -84,6 +89,7 @@ const Projects = () => {
       background: linterImg,
       github: "https://github.com/Stricks1/capstone-linter",
       live: false,
+      horizontal: false,
     },
     {
       name: "Chord Flow",
@@ -94,6 +100,7 @@ const Projects = () => {
       background: musicBg,
       github: "https://github.com/Stricks1/onlineShop",
       live: "https://rawcdn.githack.com/Stricks1/onlineShop/b1a7186910215306c6bcf25926abcad22bb4154a/index.html",
+      horizontal: false,
     }
   ]
 

@@ -107,7 +107,7 @@ const Project = ({ project }) => {
             </>
           }
         </div>
-        <img className="img-dsk" src={project.background} alt="imageProject" />
+        <img className={ project.horizontal? "img-dsk-hor" : "img-dsk" } src={project.background} alt="imageProject" />
       </div>
     </>
   );
