@@ -10,6 +10,9 @@ import seaBg from "../assets/seaBg.png";
 import phoneReact from "../assets/reactPhone.png";
 import desktopReact from "../assets/reactSs.png";
 import reactBg from "../assets/reactBg.png";
+import phoneTicTacToe from "../assets/ticTacCel.png";
+import desktopTicTacToe from "../assets/ticTacDesk.png";
+import ticTacToeBg from "../assets/tictacBg.png";
 import capTwitterFull from "../assets/capTwitterFull.png";
 import twitterBg from "../assets/twitterBg.png";
 import linterImg from "../assets/linterRuby.png";
@@ -63,14 +66,14 @@ const Projects = () => {
       live: "https://bearded-toonie-16990.herokuapp.com/",
     },
     {
-      name: "Chord Flow",
-      info: "In this project, I create a music online shop with a 'main page with search option' and 'results' page. I used HTML & CSS techniques, such as semantic HTML, positioning of content with bootstrap, and flexbox among others. Also for learning purposes I used a framework - 'Flickity' to build a carousel.",
-      short: "A Layout for a Music Shop using Bootstrap.",
-      techs: ["HTML", "CSS", "Bootstrap"],
-      images: [desktopMusic, phoneMusic],
-      background: musicBg,
-      github: "https://github.com/Stricks1/onlineShop",
-      live: "https://rawcdn.githack.com/Stricks1/onlineShop/b1a7186910215306c6bcf25926abcad22bb4154a/index.html",
+      name: "Tic-Tac-Toe",
+      info: "This Tic-Tac-Toe game has the possibility to play against a friend or an AI with 3 different levels of difficulty.",
+      short: "Tic-Tac-Toe game for browser with AI.",
+      techs: ["JS", "Game", "AI"],
+      images: [desktopTicTacToe, phoneTicTacToe],
+      background: ticTacToeBg,
+      github: "https://github.com/Stricks1/JsTicTacToe/",
+      live: "https://raw.githack.com/Stricks1/JsTicTacToe/feature-ai/index.html",
     },
     {
       name: "XML Linter",
