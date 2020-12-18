@@ -2,7 +2,7 @@ import { useViewport } from "../hooks/viewPort";
 
 export const Modal = ({ handleClose, show, project }) => {
   const { width } = useViewport();
-  const breakpoint = 640;
+  const breakpoint = 560;
   const showHideClassName = show ? "modal1 display-block" : "modal1 display-none";
 
   if (width < breakpoint) {
@@ -94,12 +94,12 @@ export const Modal = ({ handleClose, show, project }) => {
             </div>
             <div className="w-45 mr-4 d-flex flex-column justify-content-between my-4">
               <p className="mb-2 modal-info">{project.info}</p>
-              <div className="d-flex mb-4">
-                <div className="text-center button-square py-1 px-3 mr-2 mb-2 font-weight-bold" onClick={() => window.open(project.live)}>
+              <div className="d-flex flex-wrap mb-4">
+                <div className="text-center text-nowrap button-square py-1 px-3 mr-2 mb-2 font-weight-bold" onClick={() => window.open(project.live)}>
                   See Live &nbsp;&nbsp;
                   <i className="fas fa-external-link-alt"></i>
                 </div>
-                <div className="text-center button-square py-1 px-3 mr-2 mb-2 font-weight-bold" onClick={() => window.open(project.github)}>
+                <div className="text-center text-nowrap button-square py-1 px-3 mr-2 mb-2 font-weight-bold" onClick={() => window.open(project.github)}>
                   See Source &nbsp;&nbsp;
                   <i className="fa fa-github" />
                 </div>
