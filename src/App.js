@@ -3,6 +3,7 @@ import { ViewportProvider } from "./hooks/viewPort";
 import Nav from "./components/topNav";
 import Header from "./containers/headerContainer";
 import Projects from "./containers/projectsContainer";
+import About from "./containers/aboutContainer";
 import "./index.css";
 
 export default function App() {
@@ -11,6 +12,7 @@ export default function App() {
       <Nav />
       <Header />
       <Projects />
+      <About />
     </ViewportProvider>
   );
 }

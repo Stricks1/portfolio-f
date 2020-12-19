@@ -471,3 +471,25 @@ code {
     font-size: 1.75em;
   }
 }
+
+/* About elements */ 
+
+.bg-about-img {
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 50vw;
+  height: 100vh;
+  background-position: right;
+}
+
+.bg-about-img-mobile {
+  background-repeat: no-repeat;
+  background-position: right -180px bottom -80px;
+  background-size: 400px 375px;
+}
+
+@media (max-width: 1170px) {
+  .bg-about-img {
+    background-position: -15%;
+  }
+}
