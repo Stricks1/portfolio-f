@@ -318,7 +318,7 @@ code {
   position: absolute;
   left: 0;
   top: 0;
-  height: auto;
+  height: 100%;
   width: 100%;
   opacity: 0.6;
 }
@@ -331,6 +331,12 @@ code {
 @media (max-width: 1550px) {
   .text-highlight {
     font-size: 1.25em;
+  }
+}
+@media (max-width: 1500px) {
+  .project-wrapper .img-dsk-hor {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -346,7 +352,7 @@ code {
     height: auto;
   }
   .project-wrapper .img-dsk,
-  .project-wrapper:hover .img-dsk-hor {
+  .project-wrapper .img-dsk-hor {
     width: auto;
     height: 100%;
   }
@@ -359,18 +365,44 @@ code {
   .project-wrapper {
     width: 35%;
   }
+  .project-wrapper .img-dsk-hor {
+    width: 100%;
+    height: auto;
+  }
+  .project-wrapper .img-dsk {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .project-wrapper .img-dsk-hor {
+    width: auto;
+    height: 100%;
+  }
 }
 
 @media (max-width: 750px) {
   .text-highlight {
     font-size: 0.65em;
   }
+}
+
+@media (max-width: 620px) {
   .project-wrapper {
-    width: fit-content;
+    width: 100%;
   }
+  .project-wrapper .img-dsk-hor,
+  .project-wrapper .img-dsk {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 560px) {
   .project-card,
-  .project-wrapper .img-dsk,
-  .project-wrapper:hover .img-dsk-hor {
+  .project-wrapper .img-dsk-hor,
+  .project-wrapper .img-dsk {
     width: 100%;
     height: auto;
   }
