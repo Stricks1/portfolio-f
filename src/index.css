@@ -478,14 +478,26 @@ code {
   background-repeat: no-repeat;
   background-position: right;
   width: 50vw;
-  height: 100vh;
+  height: 70vh;
   background-position: right;
 }
 
 .bg-about-img-mobile {
   background-repeat: no-repeat;
   background-position: right -180px bottom -80px;
-  background-size: 400px 375px;
+  background-size: 325px 335px;
+}
+
+.about-left-desktop {
+  margin-left: 5%;
+}
+
+.line-separator-white {
+  width: 90%;
+  height: 1px;
+  position: relative;
+  border-bottom: 1px solid white;
+  margin-left: 5%;
 }
 
 @media (max-width: 1170px) {
