@@ -32,8 +32,8 @@ const About = () => {
 
   if (width < breakpoint) {
     return (
-      <div id="About" className="padding-top-base header-container blurrable">
-        <div className="d-flex flex-column padding-top-base h-600 header-container d-flex justify-content-center ">
+      <div id="About" className="header-container blurrable">
+        <div className="d-flex flex-column h-600 header-container d-flex justify-content-center ">
           <div id="About" className="padding-top-base h-600 header-container d-flex justify-content-center bg-about-img-mobile blurrable" style={{ backgroundImage: `url(${AboutImage})` }}>  
             <div className="d-flex flex-column mx-4 align-self-center pb-4">
               <div className="align-self-center justify-self-end max-info-header">
