@@ -32,21 +32,67 @@ const About = () => {
 
   if (width < breakpoint) {
     return (
-      <div className="d-flex flex-column padding-top-base h-600 header-container d-flex justify-content-center ">
-        <div id="About" className="padding-top-base h-600 header-container d-flex justify-content-center bg-about-img-mobile blurrable" style={{ backgroundImage: `url(${AboutImage})` }}>  
-          <div className="d-flex flex-column mx-4 align-self-center pb-4">
-            <div className="align-self-center justify-self-end max-info-header">
-              <h1>About me</h1>
-              <p>Hi, I'm Gabriel, an enthusiastic problem solver. I'm from Brazil. I have a Bachelors in Information Systems and I studied Software Engineering at Microverse. I have more than 5 years experience in mainframe and web programming. I also have experience with other tools/languages listed below. If you'd like to get in contact about potential job opportunities, please reach out!</p>
-              <div className="d-flex">
-                <div className="button-square py-1 px-3 mr-2 mb-2 font-weight-bold" onClick={() => window.open('https://docs.google.com/document/d/18XKdsjUNB2lycjNyZZL-U_fCFK1goj0bV22lHz1pSWs/export?format=pdf', '_blank')}>
-                  Get My Resume
+      <div id="About" className="padding-top-base header-container blurrable">
+        <div className="d-flex flex-column padding-top-base h-600 header-container d-flex justify-content-center ">
+          <div id="About" className="padding-top-base h-600 header-container d-flex justify-content-center bg-about-img-mobile blurrable" style={{ backgroundImage: `url(${AboutImage})` }}>  
+            <div className="d-flex flex-column mx-4 align-self-center pb-4">
+              <div className="align-self-center justify-self-end max-info-header">
+                <h1>About me</h1>
+                <p>Hi, I'm Gabriel, an enthusiastic problem solver. I'm from Brazil. I have a Bachelors in Information Systems and I studied Software Engineering at Microverse. I have more than 5 years experience in mainframe and web programming. I also have experience with other tools/languages listed below. If you'd like to get in contact about potential job opportunities, please reach out!</p>
+                <div className="d-flex">
+                  <div className="button-square py-1 px-3 mr-2 mb-2 font-weight-bold" onClick={() => window.open('https://docs.google.com/document/d/18XKdsjUNB2lycjNyZZL-U_fCFK1goj0bV22lHz1pSWs/export?format=pdf', '_blank')}>
+                    Get My Resume
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <span className="line-separator-white mb-4"></span>
         </div>
-        <span className="line-separator-white mb-4"></span>
+        <div className="d-flex justify-content-around flex-column">
+          <div className="d-flex flex-column align-items-center my-4">
+            <div className="d-flex flex-nowrap mb-3 justify-content-center align-items-center">
+              <img className="bulletLists45-phone" src={Square45} alt="square 45 bullet"/>
+              <h2 className="pt-2 font-weight-bold">&nbsp;Language</h2>
+            </div>
+            <ul className="ul-about list-unstyled list-group font-list-about font-list-about-phone align-items-center d-flex flex-column flex-nowrap">
+              { Languages.map(item => (
+                  <li key={item}>
+                      {item}
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+          <div className="d-flex flex-column align-items-center my-4">
+            <div className="d-flex flex-nowrap mb-3 justify-content-center align-items-center">
+              <img className="bulletLists-phone" src={Square} alt="square 45 bullet"/>
+              <h2 className="pt-2 font-weight-bold">&nbsp;Frameworks</h2>
+            </div>
+            <ul className="ul-about list-unstyled list-group font-list-about font-list-about-phone align-items-center d-flex flex-column flex-nowrap">
+              { Frameworks.map(item => (
+                  <li key={item}>
+                      {item}
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+          <div className="d-flex flex-column align-items-center my-4">
+            <div className="d-flex flex-nowrap mb-3 justify-content-center align-items-center">
+                <img className="bulletLists-phone" src={Circle} alt="square 45 bullet"/>
+                <h2 className="pt-2 font-weight-bold">&nbsp;Skills</h2>
+            </div>
+            <ul className="ul-about list-unstyled list-group font-list-about font-list-about-phone align-items-center d-flex flex-column flex-nowrap">
+              { Skills.map(item => (
+                  <li key={item}>
+                      {item}
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+        </div>
       </div>
     );
   }
