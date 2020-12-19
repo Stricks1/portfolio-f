@@ -4,6 +4,7 @@ import Nav from "./components/topNav";
 import Header from "./containers/headerContainer";
 import Projects from "./containers/projectsContainer";
 import About from "./containers/aboutContainer";
+import Footer from "./components/footer";
 import "./index.css";
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
       <Header />
       <Projects />
       <About />
+      <Footer />
     </ViewportProvider>
   );
 }

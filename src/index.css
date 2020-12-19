@@ -509,7 +509,7 @@ code {
 .bg-about-img {
   background-repeat: no-repeat;
   background-position: right;
-  width: 50vw;
+  width: 40vw;
   height: 70vh;
   background-position: right;
 }
@@ -569,4 +569,16 @@ code {
   .bg-about-img {
     background-position: -15%;
   }
+}
+
+/* Footer Elements */
+
+.footer-width {
+  min-width: 200px;
+  max-width: 400px;
+  width: 20%;
+}
+
+.border-footer {
+  border-top: 1px solid #b8b9bd;
 }
