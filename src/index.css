@@ -532,6 +532,24 @@ code {
   margin-left: 5%;
 }
 
+.bulletLists45 {
+  width: auto;
+  height: 1em;
+}
+
+.bulletLists {
+  width: auto;
+  height: 0.8em;
+}
+
+.ul-about {
+  padding: 0;
+}
+
+.font-list-about li {
+  margin: 0.5em 0;
+}
+
 @media (max-width: 1170px) {
   .bg-about-img {
     background-position: -15%;
