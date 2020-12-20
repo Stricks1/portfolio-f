@@ -49,7 +49,6 @@ const FormEmail = () => {
 
   const sendForm = (e) => {
     e.preventDefault();
-    let success = false
     document.getElementById('thankyou_message').classList.add('d-none');
     document.getElementById('error_message').classList.add('d-none');
 
