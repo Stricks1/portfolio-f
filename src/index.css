@@ -646,3 +646,12 @@ code {
 .border-footer {
   border-top: 1px solid #b8b9bd;
 }
+
+
+.grey-color2 {
+  color: #505F79;
+}
+
+.grey-color2:hover {
+  color: #384357;
+}
