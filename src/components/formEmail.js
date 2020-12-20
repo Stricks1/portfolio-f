@@ -56,9 +56,6 @@ const FormEmail = () => {
 
     let formData = getFormData(form)
     let data = formData.data;
-    console.log('teste')
-    console.log(data)
-    console.log('testing?')
 
     if (formData.honeypot) {
       return false;
@@ -102,39 +99,41 @@ const FormEmail = () => {
   }
 
   return (
-    <div className="blurrable">
-      <form id="gform" method="POST" className="pure-form pure-form-stacked" data-email="from_email@example.com"
-        onSubmit={sendForm} action="https://script.google.com/macros/s/AKfycbzomy4oZw9rylk5CTN0Rbmf0DF82qUvKRl8qEiSf5GOBLwRv7c/exec">
-        <label htmlFor="name">
-          Name: 
-        </label>
-        <input id="name" name="name" placeholder="How should I call you?" />       
-        <label htmlFor="message">
-          Message: 
-        </label>
-        <textarea id="message" name="message" rows="10"
-                  placeholder="Tell me what's on your mind...">
-        </textarea>             
-        <label htmlFor="email">
-            <em>Your</em> Email Address:
-        </label>
-        <input id="email" name="email" type="email"
-            required placeholder="your.name@email.com" />        
-        <button className="button-success pure-button button-xlarge">
-            <i className="fa fa-paper-plane" />
-            &nbsp;Send
-        </button>    
-      </form>
-      <div className="d-none" id="thankyou_message">
-        <h2>
+    <div id="Contact" className="blurrable d-flex justify-content-around align-items-center pb-4 mt-4 contact-dsk">
+      <div className="contact-left-desktop">
+        <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+      </div>
+      <div className="m-4 right-submit-margin">
+        <form id="gform" method="POST" className="pure-form pure-form-stacked form-elements" data-email="from_email@example.com"
+          onSubmit={sendForm} action="https://script.google.com/macros/s/AKfycbzomy4oZw9rylk5CTN0Rbmf0DF82qUvKRl8qEiSf5GOBLwRv7c/exec">
+          <div className="d-flex flex-column">
+            <div className="d-flex mb-4">
+              <input className="pl-2 mr-4" id="name" name="name" placeholder="First Name" />       
+              <input className="pl-2" id="last" name="last" placeholder="Last Name" />       
+            </div>
+            <input className="pl-2 mb-4" id="email" name="email" type="email"
+                required placeholder="Email address" />    
+            <textarea id="message" name="message" rows="10" className="p-2 mb-4"
+                      placeholder="Write your message...">
+            </textarea>   
+            <div className="d-flex">
+              <button className="button-square py-1 px-3 mr-2 mb-2 font-weight-bold" type="submit">
+                Get in touch
+              </button>
+            </div>
+          </div>  
+        </form>
+        <div className="d-none" id="thankyou_message">
+          <h2>
             <em>Thanks</em> for contacting us!
             We will get back to you soon!
-        </h2>
-      </div>
-      <div className="d-none" id="error_message">
-        <h2>
+          </h2>
+        </div>
+        <div className="d-none" id="error_message">
+          <h2>
             Sorry something wrong on our servers, please try again in a few minutes.
-        </h2>
+          </h2>
+        </div>
       </div>
     </div>
   );

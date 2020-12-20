@@ -98,7 +98,7 @@ const About = () => {
   }
 
   return (
-    <div id="About" className="padding-top-base header-container blurrable">
+    <div id="About" className="padding-top-base header-container blurrable pb-4">
       <div className="d-flex flex-column">
         <div className="d-flex justify-content-between pb-4">
           <div className="align-self-center justify-self-end max-info-header about-left-desktop">

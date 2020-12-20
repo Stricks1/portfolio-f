@@ -520,7 +520,8 @@ code {
   background-size: 325px 335px;
 }
 
-.about-left-desktop {
+.about-left-desktop,
+.contact-left-desktop {
   margin-left: 5%;
 }
 
@@ -568,6 +569,45 @@ code {
 @media (max-width: 1170px) {
   .bg-about-img {
     background-position: -15%;
+  }
+}
+
+/* Contact elements */
+
+.right-submit-margin {
+  margin-right: 5%;
+}
+
+.pure-form {
+  font-size: small;
+}
+
+.contact-left-desktop {
+  max-width: 500px;
+}
+
+.pure-form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #DBD8D7;
+  padding-bottom: 5px;
+}
+
+.pure-form textarea {
+  background-color: #FBF8F7;
+  border: none;
+}
+
+.pure-form .button-square {
+  font-size: large;
+}
+
+@media (max-width: 750px) {
+  .contact-dsk {
+    flex-direction: column;
+  }
+  .contact-left-desktop {
+    width: 70%;
   }
 }
 
