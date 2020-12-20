@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
-import { useViewport } from "../hooks/viewPort";
-import footerPhone from "../assets/footerPhone.svg";
+import { useViewport } from '../hooks/viewPort';
+import footerPhone from '../assets/footerPhone.svg';
 
 const Footer = () => {
   const { width } = useViewport();
@@ -11,7 +11,7 @@ const Footer = () => {
     return (
       <div className="mt-2 border-footer d-flex flex-column justify-content-center align-items-center text-white blurrable">
         <ul className="my-2 list-unstyled footer-width list-group list-header d-flex flex-row justify-content-between">
-             <li>
+          <li>
             <a href="https://github.com/Stricks1/" target="_blank" title="GitHub" className="grey-color2">
               <i className="fa fa-github" />
             </a>
@@ -33,7 +33,7 @@ const Footer = () => {
           </li>
         </ul>
         <div className="mt-1 mb-3">
-          <img src={footerPhone} alt="footer end"/>
+          <img src={footerPhone} alt="footer end" />
         </div>
       </div>
     );

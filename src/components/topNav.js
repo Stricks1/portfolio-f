@@ -1,5 +1,7 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 import React from 'react';
-import { useViewport } from "../hooks/viewPort";
+import { useViewport } from '../hooks/viewPort';
 
 const Nav = () => {
   const { width } = useViewport();
@@ -12,7 +14,6 @@ const Nav = () => {
     menuM.firstChild.firstChild.classList.toggle('fa-bars');
     menuM.firstChild.firstChild.classList.toggle('fa-times');
     menuM.firstChild.firstChild.classList.toggle('nav-clicked');
-    console.log(menuM.firstChild.firstChild);
   };
 
   if (width < breakpoint) {

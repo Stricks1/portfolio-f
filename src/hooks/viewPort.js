@@ -1,4 +1,5 @@
-import React from "react";
+/* eslint-disable react/prop-types */
+import React from 'react';
 
 export const viewportContext = React.createContext({});
 
@@ -11,8 +12,8 @@ export const ViewportProvider = ({ children }) => {
   };
 
   React.useEffect(() => {
-    window.addEventListener("resize", handleWindowResize);
-    return () => window.removeEventListener("resize", handleWindowResize);
+    window.addEventListener('resize', handleWindowResize);
+    return () => window.removeEventListener('resize', handleWindowResize);
   }, []);
 
   return (

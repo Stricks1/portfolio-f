@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
-import { useViewport } from "../hooks/viewPort";
-import HeaderImage from "../assets/header.svg";
+import { useViewport } from '../hooks/viewPort';
+import HeaderImage from '../assets/header.svg';
 
 const Header = () => {
   const { width } = useViewport();
@@ -12,9 +12,19 @@ const Header = () => {
       <div className="padding-top-base h-600 header-container d-flex justify-content-center bg-header-img-mobile blurrable" style={{ backgroundImage: `url(${HeaderImage})` }}>
         <div className="d-flex flex-column mx-4 align-self-center pb-4">
           <div className="align-self-center justify-self-end max-info-header">
-            <h1>Hey There. <br /> I'm Gabriel</h1>
-            <h4>I'm a Software Developer</h4>
-            <p>I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.</p>
+            <h1>
+              Hey There.
+              <br />
+              {' '}
+              I&apos;m Gabriel
+            </h1>
+            <h4>I&apos;m a Software Developer</h4>
+            <p>
+              I can help you build a product, feature or website
+              Look through some of my work and experience!
+              If you like what you see and have a project you need coded,
+              don&apos;t hesitate to contact me.
+            </p>
           </div>
           <div className="align-self-center w-50">
             <ul className="list-unstyled list-group list-header d-flex flex-row justify-content-between w-100">
@@ -73,9 +83,18 @@ const Header = () => {
           </ul>
         </div>
         <div className="align-self-center justify-self-end max-info-header header-left-desktop">
-          <h1>Hey There. <br /> I'm Gabriel</h1>
-          <h4>I'm a Software Developer</h4>
-          <p>I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.</p>
+          <h1>
+            Hey There.
+            <br />
+            {' '}
+            I&apos;m Gabriel
+          </h1>
+          <h4>I&apos;m a Software Developer</h4>
+          <p>
+            I can help you build a product, feature or website Look
+            through some of my work and experience! If you like what you see
+            and have a project you need coded, don&apos;t hesitate to contact me.
+          </p>
         </div>
         <div>
           <div className="bg-header-img" style={{ backgroundImage: `url(${HeaderImage})` }} />
