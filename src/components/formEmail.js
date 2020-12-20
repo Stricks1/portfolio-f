@@ -1,6 +1,7 @@
 /* eslint-disable array-callback-return */
 import React from 'react';
 import { useViewport } from "../hooks/viewPort";
+import loadingSvg from "../assets/loading.svg";
 
 const FormEmail = () => {
   const { width } = useViewport();
@@ -51,6 +52,7 @@ const FormEmail = () => {
     e.preventDefault();
     document.getElementById('thankyou_message').classList.add('d-none');
     document.getElementById('error_message').classList.add('d-none');
+    document.getElementById('loading-svg').classList.remove('d-none');
 
     let form = e.target;
 
@@ -79,15 +81,13 @@ const FormEmail = () => {
           document.getElementById('error_message').classList.add('d-none');
           document.getElementById('gform').classList.add('d-none');
           document.getElementById('thankyou_message').classList.remove('d-none');
+          document.getElementById('loading-svg').classList.add('d-none');
         } else {
           if (xhr.status !== 200) {
             document.getElementById('error_message').classList.remove('d-none');
+            document.getElementById('loading-svg').classList.add('d-none');
           }
         }
-        console.log('return returners')
-        console.log(xhr.readyState)
-        console.log(xhr.status)
-        console.log('enders returners')
     };
     // url encode form data for sending as post data
     let encoded = Object.keys(data).map(function(k) {
@@ -112,10 +112,13 @@ const FormEmail = () => {
             <textarea id="message" name="message" rows="10" className="p-2 mb-4" required
                       placeholder="Write your message...">
             </textarea>   
-            <div className="d-flex align-self-center">
-              <button className="button-square py-1 px-3 mr-2 mb-2 font-weight-bold" type="submit">
+            <div className="d-flex align-self-center align-items-center">
+              <button className="button-square py-1 px-3 font-weight-bold" type="submit">
                 Get in touch
               </button>
+              <div id="loading-svg" className="ml-3 d-none">
+                <img className="sending-form" src={loadingSvg} alt="sending data" />
+              </div>
             </div>
           </div>  
         </form>
@@ -153,10 +156,13 @@ const FormEmail = () => {
             <textarea id="message" name="message" rows="10" className="p-2 mb-4" required
                       placeholder="Write your message...">
             </textarea>   
-            <div className="d-flex">
-              <button className="button-square py-1 px-3 mr-2 mb-2 font-weight-bold" type="submit">
+            <div className="d-flex align-items-center">
+              <button className="button-square py-1 px-3 font-weight-bold" type="submit">
                 Get in touch
               </button>
+              <div id="loading-svg" className="ml-3 d-none">
+                <img className="sending-form" src={loadingSvg} alt="sending data" />
+              </div>
             </div>
           </div>  
         </form>

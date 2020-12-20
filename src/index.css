@@ -615,10 +615,15 @@ code {
   border: none;
   background-color: #F4F1F0;
   color: #5B5957;
+  cursor: default;
 }
 
 .form-phone {
   width: 80%;
+}
+
+.sending-form {
+  text-align: center;
 }
 
 @media (max-width: 750px) {
