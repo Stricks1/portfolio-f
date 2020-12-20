@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { ViewportProvider } from './hooks/viewPort';
+import Nav from './components/topNav';
+import Header from './containers/headerContainer';
+import Projects from './containers/projectsContainer';
+import About from './containers/aboutContainer';
+import FormEmail from './components/formEmail';
+import Footer from './components/footer';
+import './index.css';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ViewportProvider>
+      <Nav />
+      <Header />
+      <Projects />
+      <About />
+      <FormEmail />
+      <Footer />
+    </ViewportProvider>
   );
 }
-
-export default App;
