@@ -602,6 +602,25 @@ code {
   font-size: large;
 }
 
+#thankyou_message {
+  color: rgb(74, 214, 74);
+}
+
+#error_message {
+  color: rgb(230, 107, 107);
+}
+
+.button-square:disabled,
+.button-square[disabled]{
+  border: none;
+  background-color: #F4F1F0;
+  color: #5B5957;
+}
+
+.form-phone {
+  width: 80%;
+}
+
 @media (max-width: 750px) {
   .contact-dsk {
     flex-direction: column;
