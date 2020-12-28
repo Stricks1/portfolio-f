@@ -20,7 +20,7 @@ const Header = () => {
             </h1>
             <h4>I&apos;m a Software Developer</h4>
             <p>
-              I can help you build a product, feature or website
+              I can help you build a product, feature or website.
               Look through some of my work and experience!
               If you like what you see and have a project you need coded,
               don&apos;t hesitate to contact me.
@@ -91,7 +91,7 @@ const Header = () => {
           </h1>
           <h4>I&apos;m a Software Developer</h4>
           <p>
-            I can help you build a product, feature or website Look
+            I can help you build a product, feature or website. Look
             through some of my work and experience! If you like what you see
             and have a project you need coded, don&apos;t hesitate to contact me.
           </p>
