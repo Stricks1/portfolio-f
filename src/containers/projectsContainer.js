@@ -38,7 +38,7 @@ const Projects = () => {
   const listProjects = [
     {
       name: 'Sea Treasures',
-      info: 'In this game, designed with a 16-bit layout, you are Bob the octopus, and you are on a quest to find treasure in the deep sea. You need to face some sea creatures in order to achieve your goal, and you can kill the creatures by shooting ink and interacting with levers to open paths. You have a limited time to complete the quest.',
+      info: 'In this desktop browser game, designed with a 16-bit layout, you are Bob the octopus, and you are on a quest to find treasure in the deep sea. You need to face some sea creatures in order to achieve your goal, and you can kill the creatures by shooting ink and interacting with levers to open paths. You have a limited time to complete the quest.',
       short: 'A platform-shooter game build in Phaser3.',
       techs: ['JS', 'Phaser3', 'Game'],
       images: [seaSs],
