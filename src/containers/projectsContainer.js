@@ -108,7 +108,7 @@ const Projects = () => {
     return (
       <div id="Portfolio" className="padding-top-base vw-90 m-auto">
         <div className="d-flex flex-column pb-4 blurrable">
-          <h3 className="text-nowrap h3-project">My Recent Works</h3>
+          <h3 className="text-nowrap h3-project">My Tech Projects</h3>
           <span className="line-separator mb-4" />
         </div>
         <HighlightProject project={highlightProject} />
@@ -124,7 +124,7 @@ const Projects = () => {
   return (
     <div id="Portfolio" className="padding-top-base vw-90 m-auto">
       <div className="d-flex pb-4 blurrable">
-        <h3 className="text-nowrap h3-project">My Recent Works</h3>
+        <h3 className="text-nowrap h3-project">My Tech Projects</h3>
         <span className="line-separator ml-3" />
       </div>
       <HighlightProject project={highlightProject} />
