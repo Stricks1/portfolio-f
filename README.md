@@ -1,6 +1,6 @@
 # Portfolio
 
-This project is a Portfolio to show my GitHub projects into a responsive web page.
+This project is a Portfolio to show my GitHub projects into a responsive web page and share on https://gabrielsilveira.me
 
 
 ## Built With
