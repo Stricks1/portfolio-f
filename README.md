@@ -5,12 +5,13 @@ This project is a Portfolio to show my GitHub projects into a responsive web pag
 
 ## Built With
 
-   - HTML,
-   - CSS,
-   - Bootstrap,
-   - Font Awesome,
-   - Javascritpt,
+   - HTML
+   - CSS
+   - Bootstrap
+   - Font Awesome
+   - Javascritpt
    - React
+   - Github Pages
 
 ## Live Demo
 
